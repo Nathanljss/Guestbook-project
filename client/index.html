@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guestbook project</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script type="module" src="./main.js" defer></script>
+  </head>
+  <body>
+    <h1>Write us a message!</h1>
+    <form id="form">
+      <label>Name</label>
+      <input id="uname" name="Name" placeholder="Name" required />
+
+      <label>Message</label>
+      <input name="Message" placeholder="Message" required />
+
+      <input type="button" onclick="addName()" value="Submit" />
+    </form>
+    <h3>Previous messages</h3>
+    <ul id="Chat">
+      <li>Admin said: Hello there!</li>
+    </ul>
+  </body>
+</html>
